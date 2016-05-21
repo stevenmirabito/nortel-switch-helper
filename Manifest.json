@@ -4,8 +4,7 @@
   "version": "0.1",
   "permissions": [
     "tabs",
-    "http://*/*",
-    "file://*/*"
+    "http://*/*"
   ],
   "icons": {
     "16": "images/icon16.png",
