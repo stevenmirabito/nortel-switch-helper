@@ -7,7 +7,9 @@ the UI and remove the Java dependency.
 
 ## Installation
 Download [the latest release](https://github.com/stevenmirabito/nortel-switch-helper/releases)
-and install it by dragging and dropping it on the Chrome extensions page.
+and install it by dragging and dropping it on the Chrome extensions page. To
+use it, simply navigate to the switch's web UI (192.168.1.132 if not configured
+otherwise) and click the extension's icon in the toolbar.
 
 ## Development
 Clone this repo, then use Bower to pull down a few dependencies:
