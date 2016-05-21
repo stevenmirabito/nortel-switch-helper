@@ -1,0 +1,204 @@
+<div class="logo">
+    <img src="nortel_logo.svg" alt="Nortel">
+</div>
+
+<ul class="accordion-nav animated">
+    <li class="has-children">
+        <input type="checkbox" name="summary" id="summary">
+        <label for="summary"><i class="fa fa-fw fa-info-circle" aria-hidden="true"></i> Summary</label>
+        <ul>
+            <li><a href="sum_SwitchInfo.html">Switch Information</a></li>
+        </ul>
+    </li>
+
+    <li class="has-children">
+        <input type="checkbox" name="configuration" id="configuration">
+        <label for="configuration"><i class="fa fa-fw fa-cogs" aria-hidden="true"></i> Configuration</label>
+        <ul>
+            <li><a href="cfg_Ip.html">IP</a></li>
+            <li><a href="cfg_System.html">System</a></li>
+            <li><a href="cfg_RemoteAccess.html">Remote Access</a></li>
+            <li><a href="cfg_SNMP.html">SNMPv1</a></li>
+            <li class="has-children">
+                <input type="checkbox" name="snmpv3" id="snmpv3">
+                <label for="snmpv3">SNMPv3</label>
+                <ul>
+                    <li><a href="cfg_SNMPv3.html">System Information</a></li>
+                    <li><a href="cfg_SNMPv3UsmUser.html">User Specification</a></li>
+                    <li><a href="cfg_SNMPv3VacmGroup.html">Group Membership</a></li>
+                    <li><a href="cfg_SNMPv3VacmAccess.html">Group Access Rights</a></li>
+                    <li><a href="cfg_SNMPv3VacmView.html">Management Info View</a></li>
+                    <li><a href="cfg_SNMPv3Notify.html">Notification</a></li>
+                    <li><a href="cfg_SNMPv3TargetAddr.html">Target Address</a></li>
+                    <li><a href="cfg_SNMPv3TargetParams.html">Target Parameter</a></li>
+                </ul>
+            </li>
+            <li><a href="cfg_SNMPTrap.html">SNMP Trap</a></li>
+            <li><a href="cfg_MacTbl.html">MAC Address Table</a></li>
+            <li><a href="cfg_MacTblFind.html">Find MAC Address</a></li>
+            <li><a href="cfg_PortMgmt.html?port=1">Port Management</a></li>
+            <li><a href="cfg_FlowControl.html">Flow Control</a></li>
+            <li><a href="cfg_SwLoad.html">Software Download</a></li>
+            <li><a href="cfg_ConfigFile.html">Configuration File</a></li>
+            <li><a href="cfg_Console.html">Console Port</a></li>
+            <li class="has-children">
+                <input type="checkbox" name="power-management" id="power-management">
+                <label for="power-management">Power Management</label>
+                <ul>
+                    <li><a href="cfg_polmaindispatcher.html">Global Power Management</a></li>
+                    <li><a href="cfg_polportdispatcher.html">Port Property</a></li>
+                </ul>
+            </li>
+            <li><a href="cfg_SNTP.html">SNTP</a></li>
+        </ul>
+    </li>
+
+    <li class="has-children">
+        <input type="checkbox" name="device-monitoring" id="device-monitoring">
+        <label for="device-monitoring"><i class="fa fa-fw fa-tachometer" aria-hidden="true"></i> Device Monitoring</label>
+        <ul>
+            <li><a href="fau_SystemLogMercury.html">System Log</a></li>
+            <li class="has-children">
+                <input type="checkbox" name="statistics" id="statistics">
+                <label for="statistics">Statistics</label>
+                <ul>
+                    <li><a href="sta_Port.html">Port</a></li>
+                    <li><a href="sta_PortErrSum.html">Port Error Summary</a></li>
+                    <li><a href="sta_Interface.html">Interface</a></li>
+                    <li><a href="sta_EthernetErr.html">Ethernet Errors</a></li>
+                    <li><a href="sta_TransBridge.html">Transparent Bridging</a></li>
+                    <li><a href="app_LACPPortStats.html">Link Aggregation Ports</a></li>
+                </ul>
+            </li>
+            <li class="has-children">
+                <input type="checkbox" name="events" id="events">
+                <label for="events">Events</label>
+                <ul>
+                    <li><a href="fau_RMONThreshold.html">RMON Threshold</a></li>
+                    <li><a href="fau_RMONEventLogs.html">RMON Event Log</a></li>
+                    <li><a href="sta_RMONEth.html">RMON Ethernet</a></li>
+                    <li><a href="sta_RMONHist.html">RMON History</a></li>
+                </ul>
+            </li>
+            <li><a href="app_VCC.html?port=1">Virtual Cable Tester</a></li>
+        </ul>
+    </li>
+
+    <li class="has-children">
+        <input type="checkbox" name="application" id="application">
+        <label for="application"><i class="fa fa-fw fa-cubes" aria-hidden="true"></i> Application</label>
+        <ul>
+            <li><a href="app_RateLimiting.html?port=1">Rate Limiting</a></li>
+            <li><a href="app_EAP.html?port=1">EAPOL Security</a></li>
+            <li class="has-children">
+                <input type="checkbox" name="mac-address-security" id="mac-address-security">
+                <label for="mac-address-security">MAC Address Security</label>
+                <ul>
+                    <li><a href="app_MACSecurity.html">Security Configuration</a></li>
+                    <li><a href="app_MACSecurityPort.html">Port Configuration</a></li>
+                    <li><a href="app_MACSecurityList.html">Port List</a></li>
+                    <li><a href="app_MACSecurityTable.html">Security Table</a></li>
+                    <li><a href="app_MACFilter.html">DA MAC Filtering</a></li>
+                </ul>
+            </li>
+            <li class="has-children">
+                <input type="checkbox" name="igmp" id="igmp">
+                <label for="igmp">IGMP</label>
+                <ul>
+                    <li><a href="app_IGMP.html">IGMP Configuration</a></li>
+                    <li><a href="app_IGMPMember.html">Multicast Group</a></li>
+                    <li><a href="app_MACMcastFilter.html">Unknown Multicast</a></li>
+                </ul>
+            </li>
+            <li class="has-children">
+                <input type="checkbox" name="vlan" id="vlan">
+                <label for="vlan">VLAN</label>
+                <ul>
+                    <li><a href="app_VLANCfg.html">VLAN Configuration</a></li>
+                    <li><a href="app_VLANPortCfg.html?screen=1">Port Configuration</a></li>
+                    <li><a href="app_VLANPortInfo.html">Port Information</a></li>
+                </ul>
+            </li>
+            <li class="has-children">
+                <input type="checkbox" name="spanning-tree" id="spanning-tree">
+                <label for="spanning-tree">Spanning Tree</label>
+                <ul>
+                    <li><a href="app_RSTPPortConfigMercury.html?port=1">Port Information</a></li>
+                    <li><a href="app_RSTPBridgeConfigMercury.html">Bridge Information</a></li>
+                </ul>
+            </li>
+            <li class="has-children">
+                <input type="checkbox" name="link-aggregation-protocol" id="link-aggregation-protocol">
+                <label for="link-aggregation-protocol">Link Aggregation Protocol</label>
+                <ul>
+                    <li><a href="app_LACPBridgeConfig.html">Bridge Configuration</a></li>
+                    <li><a href="app_LACPPortConfig.html">Port Configuration</a></li>
+                </ul>
+            </li>
+            <li class="has-children">
+                <input type="checkbox" name="quality-of-service" id="quality-of-service">
+                <label for="quality-of-service">Quality of Service</label>
+                <ul>
+                    <li class="has-children">
+                        <input type="checkbox" name="agent" id="agent">
+                        <label for="agent">Agent</label>
+                        <ul>
+                            <li><a href="app_QoSAgentConfig.html">Configuration</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="app_QoSIfConfig.html">Interface Configuration</a></li>
+                    <li><a href="app_QoSUserPriAssign.html">Priority Queue Assignment</a></li>
+                    <li><a href="app_QoSDSCPMapping.html">DSCP Mapping</a></li>
+                    <li><a href="app_QoSDSCPAssign.html">DSCP Queue Assignment</a></li>
+                </ul>
+            </li>
+            <li class="has-children">
+                <input type="checkbox" name="802.1ab" id="802.1ab">
+                <label for="802.1ab">802.1ab</label>
+                <ul>
+                    <li><a href=app_LLDP.html"">LLDP Configuration</a></li>
+                    <li><a href="app_LLDPsysData.html?screen=1">LLDP Local System Data</a></li>
+                    <li><a href="app_LLDPManagement.html?screen=1">LLDP Local Management</a></li>
+                    <li><a href="app_LLDPtxtlv.html?screen=1">LLDP Tx-Tlv</a></li>
+                    <li><a href="app_LLDPRxTxStats.html?screen=1">LLDP Rx-Tx Stats</a></li>
+                    <li><a href="app_LLDPNeighbor.html">LLDP Neighbor</a></li>
+                    <li><a href="app_LLDPNeighborMng.html">LLDP Neighbor Management</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li class="has-children">
+        <input type="checkbox" name="administration" id="administration" checked>
+        <label for="administration"><i class="fa fa-fw fa-user" aria-hidden="true"></i> Administration</label>
+        <ul>
+            <li><a href="adm_SystemInfo.html" class="active">System Information</a></li>
+            <li><a href="adm_QuickStart.html">Quick Start</a></li>
+            <li class="has-children">
+                <input type="checkbox" name="security" id="security">
+                <label for="security">Security</label>
+                <ul>
+                    <li><a href="adm_Web.html">Web</a></li>
+                    <li><a href="adm_Console.html">Console</a></li>
+                    <li><a href="adm_Radius.html">RADIUS</a></li>
+                </ul>
+            </li>
+            <li><a href="logout.html">Logout</a></li>
+            <li><a href="reset.html">Reset</a></li>
+            <li><a href="resetDefault.html">Reset to Default</a></li>
+        </ul>
+    </li>
+
+    <li class="has-children">
+        <input type="checkbox" name="support" id="support">
+        <label for="support"><i class="fa fa-fw fa-life-ring" aria-hidden="true"></i> Support</label>
+        <ul>
+            <li><a href="pagehelp_mercury.html">Help</a></li>
+            <li><a href="releasenotes.htm">Release Notes</a></li>
+            <li><a href="manuals.htm">Manuals</a></li>
+            <li><a href="upgrade.htm">Upgrade</a></li>
+        </ul>
+    </li>
+</ul>
+
+<div id="frame-container"><iframe id="main" src="adm_SystemInfo.html"></iframe></div>

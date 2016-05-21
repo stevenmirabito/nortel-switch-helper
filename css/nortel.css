@@ -1,0 +1,206 @@
+/* --------------------------------
+
+Global Page Style
+
+-------------------------------- */
+
+html, body {
+    margin: 0;
+    width: 100%;
+}
+
+.logo {
+    background: #074887;
+    padding: 1em;
+}
+
+.logo img {
+    width: 300px;
+}
+
+#frame-container {
+    position: relative;
+    margin-left: 370px;
+    height: 640px;
+}
+
+#frame-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    overflow: hidden;
+}
+
+/* --------------------------------
+
+Navigation Menu
+
+-------------------------------- */
+
+.accordion-nav,
+.accordion-nav ul,
+.accordion-nav li {
+    padding: 0;
+    list-style: none;
+}
+
+.accordion-nav a {
+    text-decoration: none;
+}
+
+.accordion-nav {
+    width: 350px;
+    background: #4d5158;
+    color: #ffffff;
+    float: left;
+    clear: both;
+    margin: 0;
+    font: 1rem sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.accordion-nav ul {
+    /* by default hide all sub menus */
+    display: none;
+}
+
+.accordion-nav li {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.accordion-nav input[type=checkbox] {
+    /* hide native checkbox */
+    position: absolute;
+    opacity: 0;
+}
+
+.accordion-nav label, .accordion-nav a {
+    position: relative;
+    display: block;
+    padding: 18px 18px 18px 48px;
+    background: #4d5158;
+    box-shadow: inset 0 -1px #555960;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.no-touch .accordion-nav label:hover, .no-touch .accordion-nav a:hover {
+    background: #52565d;
+}
+
+
+.accordion-nav label::before {
+    /* icons */
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.accordion-nav label {
+    cursor: pointer;
+}
+
+.accordion-nav label .fa {
+    margin-right: 3px;
+}
+
+.accordion-nav label::before {
+    background: url(cd-icons.svg) no-repeat;
+}
+
+.accordion-nav label::before {
+    /* arrow icon */
+    left: 18px;
+    background-position: 0 0;
+    -webkit-transform: translateY(-50%) rotate(-90deg);
+    -moz-transform: translateY(-50%) rotate(-90deg);
+    -ms-transform: translateY(-50%) rotate(-90deg);
+    -o-transform: translateY(-50%) rotate(-90deg);
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.accordion-nav input[type=checkbox]:checked + label::before {
+    /* rotate arrow */
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.accordion-nav input[type=checkbox]:checked + label + ul,
+.accordion-nav input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+    /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
+    /* show children when item is checked */
+    display: block;
+}
+
+.accordion-nav ul label,
+.accordion-nav ul a {
+    background: #35383d;
+    box-shadow: inset 0 -1px #41444a;
+    padding-left: 66px;
+}
+
+.no-touch .accordion-nav ul label:hover,
+.accordion-nav ul a:hover,
+.no-touch .accordion-nav ul label.active,
+.accordion-nav ul a.active {
+    background: #3c3f45;
+}
+
+.accordion-nav > li:last-of-type > label,
+.accordion-nav > li:last-of-type > a,
+.accordion-nav > li > ul > li:last-of-type label,
+.accordion-nav > li > ul > li:last-of-type a {
+    box-shadow: none;
+}
+
+.accordion-nav ul label::before {
+    left: 36px;
+}
+
+.accordion-nav ul label::after,
+.accordion-nav ul a::after {
+    left: 59px;
+}
+
+.accordion-nav ul ul label,
+.accordion-nav ul ul a {
+    padding-left: 84px;
+}
+
+.accordion-nav ul ul label::before {
+    left: 54px;
+}
+
+.accordion-nav ul ul label::after,
+.accordion-nav ul ul a::after {
+    left: 77px;
+}
+
+.accordion-nav ul ul ul label,
+.accordion-nav ul ul ul a {
+    padding-left: 118px;
+}
+
+.accordion-nav ul ul ul label::before {
+    left: 72px;
+}
+
+.accordion-nav ul ul ul label::after,
+.accordion-nav ul ul ul a::after {
+    left: 95px;
+}
