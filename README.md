@@ -6,8 +6,8 @@ navigating the built-in web configuration UI. This extension aims to modernize
 the UI and remove the Java dependency.
 
 ## Installation
-Download [the packed extension](dist/nortel-switch-helper.crx) and install it
-by dragging and dropping it on the [Chrome extensions page](chrome://extensions/).
+Download [the latest release](https://github.com/stevenmirabito/nortel-switch-helper/releases)
+and install it by dragging and dropping it on the Chrome extensions page.
 
 ## Development
 Clone this repo, then use Bower to pull down a few dependencies:
